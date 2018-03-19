@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:configChanges="keyboardHidden|screenSize|orientation"
+
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/ingredients"
+            android:layout_width="230dp"
+            android:layout_height="60dp"
+            android:layout_margin="25dp"
+            android:layout_weight="0.33"
+            android:background="@color/paleRed"
+            android:onClick="moveToIngredients"
+            android:text="Ingredients"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:textSize="20dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="269dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="25dp"
+
+            android:clickable="true"
+            android:onClick="addToWidget"
+            android:paddingBottom="10dp"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/ic_input_add" />
+    </LinearLayout>
+    // this frame layout is consider as a container for the fragment of the steps fragment
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside">
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="120dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="35dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/recpieColor"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:orientation="horizontal"
+
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+
+        android:src="@drawable/recpie1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/recpie_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nuttleaaaugug ergeutgc"
+            android:textColor="@color/textColor"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/servings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="servings :"
+            android:textColor="@color/textColor"
+            android:textSize="13dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
